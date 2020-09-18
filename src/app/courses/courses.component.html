@@ -1,0 +1,18 @@
+<!-- <h2>Title:- {{title}}</h2> -->
+<!-- <h2>Title:- {{getTitle()}}</h2> -->
+<!-- <ul>
+    <li *ngFor="let c of courses">{{c}}</li>
+</ul> -->
+<!-- <img src="{{imageURL}}" alt="" width="300px" height="300px"> -->
+<!-- <img [src]="imageURL" alt="" width="300px" height="300px"> -->
+<h4>ClassBind</h4>
+<button class="btn btn-primary" [class.active]="isActive">Save</button>
+<h4>InlineStyleBind</h4>
+<button [style.backgroundColor]="isActive ? 'blue' : 'white'">Save</button>
+<h4>EventBind</h4>
+
+<button (click)="onSave()">Save</button>
+
+<h4>EventBind</h4>
+
+<button (click)="onSave($event)">Save</button>
